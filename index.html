@@ -44,7 +44,7 @@
         <div class="slides" ng-show="pageIndex === 3">
             <h3 ng-show="slideIndex === 0">Welcome to the Mom report! Click to advance slides.</h3>
             <h3 ng-show="slideIndex === slides.length - 1">You've reached the end of the show, click to restart.</h3>
-            <img src="img/reportSlides/{{slides[slideIndex]}}" ng-click="advanceSlides()">
+            <img ng-src="img/reportSlides/{{slides[slideIndex]}}" ng-click="advanceSlides()">
         </div>
         
          <div class="photoGallery" ng-show="pageIndex === 4">
