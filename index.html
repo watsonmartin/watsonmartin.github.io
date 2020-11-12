@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html lang="en" ng-app="app">  
+<head>  
+    <meta charset="utf 8">
+    <title>MomSite</title>     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>  
+<body>
+    <div ng-controller="mainController">
+        <h1>Mom's Site</h1>
+        <h2 ng-cloak ng-show="adjective !== ''"> The {{ adjective }}est site {{ aroundOrTown() }} </h2>
+        <u1 class="nav nav-tabs" role="tablist">
+            <li ng-cloak ng-repeat="page in pages" role="presentation" ng-class="{'active': page.index === pageIndex }">
+               <!-- <button type="button" ng-class="{ 'btn btn-lg btn-default': page.index !== pageIndex, 'btn btn-lg btn-success': page.index === pageIndex}"
+                         ng-click="navBarClick(page.index)"> 
+                    {{page.pagename}}</button>   -->  
+                <a href="#" ng-click="navBarClick(page.index)">{{page.pagename}}</a>
+            </li>
+            </u1>
+  
+        
+        <div class="homepage" ng-show="pageIndex === 0">
+            <div> 
+                <label>Enter an adjective</label>
+                <input type="text" ng-model="adjective" />
+            </div>
+            <div class="content">
+                <image class="background" src="img/home.jpg"></image>
+            </div>
+        </div>
+        
+        <div class="yearbook" ng-show="pageIndex === 1">
+            <div class="content">
+                <image class="background" src="img/yearbook.jpg"></image>
+            </div>
+        </div>
+        
+        <div class="yearbook" ng-show="pageIndex === 2">
+            <div class="content">
+                <image class="background" src="img/bdayart.jpg"></image>
+            </div>
+        </div>
+        
+        <div class="slides" ng-show="pageIndex === 3">
+            <div class="content">
+                <image class="background" src="img/reportSlides/slide1.jpg"></image>
+            </div>
+        </div>
+    </div>
+<script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+<script src="app.js"></script> 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+</body>  
+</html>
