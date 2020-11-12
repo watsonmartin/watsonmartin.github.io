@@ -26,5 +26,15 @@ angular.module('app',[]).controller('mainController',function($scope, $log)
       $scope.pageIndex = index;
     };
     
+    $scope.slideIndex = 0; 
+    
+    $scope.slides = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"]; 
+    
+    $scope.advanceSlides = function(){
+        $log.debug("slides advanced");
+         $scope.slideIndex = ($scope.slideIndex + 1) % 4; 
+    };
+    
+    
     $log.info($scope.pages); 
 });

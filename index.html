@@ -42,10 +42,23 @@
         </div>
         
         <div class="slides" ng-show="pageIndex === 3">
+            <h3 ng-show="slideIndex === 0">Welcome to the Mom report! Click to advance slides.</h3>
+            <h3 ng-show="slideIndex === slides.length - 1">You've reached the end of the show, click to restart.</h3>
+            <img src="img/reportSlides/{{slides[slideIndex]}}" ng-click="advanceSlides()">
+        </div>
+        
+         <div class="photoGallery" ng-show="pageIndex === 4">
             <div class="content">
-                <image class="background" src="img/reportSlides/slide1.jpg"></image>
+                <image class="background" src="img/reportSlides/slide3.jpg"></image>
             </div>
         </div>
+        
+         <div class="quotes" ng-show="pageIndex === 5">
+            <div class="content">
+                <h1>I have beautiful, beautiful eyes.</h1>
+            </div>
+        </div>
+        
     </div>
 <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
 <script src="app.js"></script> 
