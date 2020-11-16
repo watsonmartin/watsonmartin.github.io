@@ -10,14 +10,17 @@ angular.module('app',[]).controller('mainController',function($scope, $log)
         return "in town."
     };
     
+   $scope.width = '900px';
+   $scope.bgColor = 'red';
+    
     $scope.pages = [
         
         { pagename: "Home", index: 0},
         { pagename: "A Yearbook Look", index: 1},
         { pagename: "Cart Art", index: 2},
         { pagename: "The Mom Report", index: 3},
-        { pagename: "Photo Gallery", index: 4},
-        { pagename: "Our Favorite Quotes", index: 5}
+        { pagename: "Photo Gallery", index: 4}
+       // { pagename: "Our Favorite Quotes", index: 5}
         
     ];
     
@@ -34,6 +37,13 @@ angular.module('app',[]).controller('mainController',function($scope, $log)
         $log.debug("slides advanced");
          $scope.slideIndex = ($scope.slideIndex + 1) % 4; 
     };
+    
+    $scope.getWindowWidth = function(){
+        $log.debug("width fetched")
+        return window.innerWidth; 
+    }
+    
+    $log.info($scope.getWindowWidth());
     
     
     $log.info($scope.pages); 

@@ -25,51 +25,72 @@
                 <input type="text" ng-model="adjective" />
             </div>
             <div class="content">
-                <image class="background" src="img/home.jpg"></image>
+                <image src="img/home.jpg" width="100%"></image>
             </div>
         </div>
         
         <div class="yearbook" ng-show="pageIndex === 1">
             <div class="content">
-                <image class="background" src="img/yearbook.jpg"></image>
+                <image ng-cloak class="background" src="img/yearbook.jpg" width="100%"></image>
             </div>
         </div>
         
         <div class="yearbook" ng-show="pageIndex === 2">
             <div class="content">
-                <image class="background" src="img/bdayart.jpg"></image>
+                <image ng-cloak  src="img/eyes.jpg" width="100%"></image>
             </div>
         </div>
         
         <div class="slides" ng-show="pageIndex === 3">
-            <h3 ng-show="slideIndex === 0">Welcome to the Mom report! Click to advance slides.</h3>
-            <h3 ng-show="slideIndex === slides.length - 1">You've reached the end of the show, click to restart.</h3>
-            <img ng-src="img/reportSlides/{{slides[slideIndex]}}" ng-click="advanceSlides()">
+            <img ng-cloak class="background" src="img/report.jpg"  width="100%">
         </div>
         
          <div class="photoGallery" ng-show="pageIndex === 4">
             <div class="content">
                 <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
-                <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
-                  data-link="https://photos.app.goo.gl/px8f19ZEWhUwbkPY9"
-                  data-title="Mom Bday"
-                  data-description="6 new photos added to shared album">
-                  <object data="https://lh3.googleusercontent.com/6AZDRYP9q9UEuT2WoGAhuavZ9vhDV3q1Cf1B5qt3oOOvLLXfQFL-KixJlAVQ58FySccL8JRHy4dn40-dC2d7Pm28t537KNkBzw-71ASdWEgxE5HyHeHDQODvkHdTOdRTNvETSJqcUA=w1920-h1080"></object>
-                  <object data="https://lh3.googleusercontent.com/aIS5G3QHuQMiVeD2owSDupZntz5xlHy3FH-NnfhIVH6fV8ov3g6Ma52fvI3nFrh_U-fIpP4_hONBBrbD0zL0uvG0_JNChbIc3YBFvaHCFiphnHvrO13gso2T4Adh6c4Z1b_cQoOJbA=w1920-h1080"></object>
-                  <object data="https://lh3.googleusercontent.com/HTRb6QcGpageaA8mgOaOOYQbY85Aw6WxfvvBCwpR2K1vwv-2nexfP6d8ieBsNOmz8pexbMz2BcwZnVzJKUB6jZXfqj8iwbsP1ujddNJDz9XKojOAUIjeAphTq4HieYaE0XvyFQJxeg=w1920-h1080"></object>
-                  <object data="https://lh3.googleusercontent.com/EeGzrGZog0uAz038vYsn8LJiUrOaknAKCFKaHv5Mxzf4e2h8XbCJEDGcP8zbqksQuUepirAMp6V7rfmBzgJMFliOI5m3ZhwDBH__DXWPT1HpMV027L8svZ5lt8e6sJPaMR3shONo7g=w1920-h1080"></object>
-                  <object data="https://lh3.googleusercontent.com/3pyKIphA-EvUTsdVyL9ErMKEzUgxczSVXYzqdg2LVT5V5aMm9lBGPSL2qo9WBq7jFERK0ocdEh6rrKlfthLTyH3A_u470FIGebHnLF5Oa8mOFAIPYmBzHFzixUFi1ItdmZAS9gmLIQ=w1920-h1080"></object>
-                  <object data="https://lh3.googleusercontent.com/SmDIBy7f6mC3zMtVHPpvczFn9yhVIiyEz6jqpZvhqZyZ9_3KsuGnUILiVpnI4B7-hlXf6J5vBWJ8o0pgC3qXnyuBIGOzah7Bv6UcX-oRLNABCcw__B0dKzvjvunuPn0eqvc2AqqJGQ=w1920-h1080"></object>
-                </div>
+                    <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+                      data-link="https://photos.app.goo.gl/px8f19ZEWhUwbkPY9"
+                      data-title="Mom Bday"
+                      data-description="29 new photos added to shared album">
+                      <object data="https://lh3.googleusercontent.com/i_1RDyOmd9W7pl_LmUTTkqJw_1lWPdXw3GtEWHo-aRYToR--zIS8k97R_xhnn7_f6_vM-P5MGyNQqK07t-thwM68Pfc_vH6r_K2g5VkpLLaGxVnIfMUXXs-G_taWli9yDA5bn5goUQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/dyqZD0FpN6iit7WoZkBsb1-UjiA80PxzYLt7RqpwIhjAQYvHdW66AH5fIbsd5XQ2v1BiYEkkEbGAtIupbkiV_zj8fDLGjG9EsDbiIpmI-93v20YgowEbF86CO_NUZuk28uspLIVveA=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/foZPSG1uqG4T7R-E3HFmcwa7mOmGPr8ljrKEBmm0sEZSju29XidKMQG0UFPFP_gwMLXFEh009exnMVXcD4p17Rn0yZ7WPMeAbF88p8k95arF3wdJjMpVr-PhnadFDyoN-uQkcIawxg=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/zIXT1jBr8meU8SO92fTVrgtVgI4z_w2sbZ5uHmoKuezAm5MBcK_IMHCFLWBp2B2Rr_jupYLZSy3ZlF4WL-SAWiHbO9DJCgohKbMgqoHSnjtneUJ04K4i88aWE4fMuAVW5UI1LEc9nw=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/-ah11YgCto3p31RQnvSRxRqd_UnPZut3NH9Vp2CPXRtL-0xYFHc-wV4xqYFcghzp6_dTkQ6rhbfei-xUl1KTXuPMLNTrf7fDcbtBWgDoy52vnXyEPzRhDuN3T5zuDZDvC6p6OuLtnQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/Mg5nsCnG4MOAf_CvmwLKsf4gYyIHpWpwt6KJrG5Ca84EElpK5Ljf1rQpMMxD2ptL9mQXrGh5uTxRdOsWp-vs4nEhBvD7MlixS5kfXbYk7EZqHA5jgZXD3ojrY9237gQzhS4u7njpVQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/3EbiwtfEBSHvXUguxE0LsyTif-k9GGkDnv1k5jRmOqA1PlHV4E33z8NjCNV_WyuW_ATfnUM39JIE2OMF15fuV7kd6DB6ahaJlwi6xJ4baIePpT2-5TQPEz9oTjOX4qNnUznjL8jCiw=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/Tp_BsLb0U4U16Z8zODvO_B1GCmiEl3OrUAUx_R7Q4VOjgYZm_kJSyfrKz5WOe_CKFQYYJQpx-M5SeEiW1JkFRm7CCJrB8nHwF24_Ni_AAyEtLIWei7Mh4kCzRwEMAj1VtNPExYzZNQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/YqeD60GfhRgt3MeaCsvM47qg76BdikzNJDDZ7MBBUPFju-YdUUNlg5XDyBVkCHDG-SweyNVMh47tJ2HP8YwcinnGwO2-MwGYewbKbhV3AeoMxMhorBZEpQWOhOPGx_ClZWnznN_b1g=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/5qFE4L8RJxPwkfZfidMdEo2DVOB5pibhp3pBszr2nzMfBS41E_VVrJYwaEbFSjrpLZFwTwoesGMAn7n8EOFKEby84TL5LbZR0i-Fut1OoSF47gYpqiWDu4N-sqBYVVC6aTs9T_1-tQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/G-mmSieG6Ys-WGsS3kFKox6xDOUQrRIHZi4IQxK1FWMxSX-Hab7iwUt_e3kEdmxISjC8jY9mcKDjHwGQNwYdQ1nOiz7vK1vkwZOXv_goohtP4QAxb3h9Iyq6kf_n5rqfAqxle5ypog=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/8AMj7_bTXwTy_V35WcmYcoWWi7Qi_xDAmEbtykbtKBqOEVhtFm32fOpsIwi4tqZFajjAL2fcqeXdULBnJfguxqWIv-pqJIKJb5VI19BRSBAciXzahXOzUTauekRKx2OFxoA80bMsQA=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/Ryw_UlA089p8CTSEvFhBNUP7WSm_DUXpecaLwt5u2E2ic5LxbX1xzZCku5zQIcm1kULQAurLDQ9ZIDkY-aFxVfg-zOawgigdH8GWYamixo1A4GoGn33B-zB4H1mzUWSe_hcysF9Y7A=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/dL92ioHTDqUKLECFsddCAz8hzDR0uznPUUj-Vg8M9EIXeO6_pVUQBKwYuMR_zNTLUyu2wKD-e8fWRXU7df1D0R7nDZoFXDHGKW8HUltjWkTlVv-y4p9NOB6tRRkam9-fmagn73XuWQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/7LoHH-3B8XxKWsfBao8VRQV1Y-ajC_HQ6EbNb4g_EcebQVpGdAaLeGwFs9eFW3j60t6Ugoozm23M78T3Mo9EafdGC7mH-AyfxAc7AZIaITHjFxyCXVESdUzYurFjlJa92G-83oTkXA=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/GKHiBmsFZAjDjh9RKNPSNRRDOlIXYo7lPEMCmFCA8hggju0iiHAsttd4G2p91iedCdO2azzOtUYVyQUp_f5KIhnZhVJ-bxNf6VwWI0BCwVkPJeeajvydsUOHWEj7mBb6BSwJAj7-eg=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/3-CvJ4GXBB5kbp3ZiSW1Rz9B-a1fFqNhndVaS-FYpaVPzacaibLKPlz7j2uxsiUURqOFhwXv24aY-XxtEpTwtGJYwVyrTrtTS2M2RUPzp3cuYNxQJ40P2C6YcqgPMUi9u4u2kA02KQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/6AZDRYP9q9UEuT2WoGAhuavZ9vhDV3q1Cf1B5qt3oOOvLLXfQFL-KixJlAVQ58FySccL8JRHy4dn40-dC2d7Pm28t537KNkBzw-71ASdWEgxE5HyHeHDQODvkHdTOdRTNvETSJqcUA=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/aIS5G3QHuQMiVeD2owSDupZntz5xlHy3FH-NnfhIVH6fV8ov3g6Ma52fvI3nFrh_U-fIpP4_hONBBrbD0zL0uvG0_JNChbIc3YBFvaHCFiphnHvrO13gso2T4Adh6c4Z1b_cQoOJbA=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/5xqrkV95bJYrWXzi88fN683cv0-2BSxVYosfC6IB8p-1JPXyV9a6URPGUrtCBepwk6jTA1c1r4SodCjOkHNkD13aDu4SrXA70AIsuagy4ABSq1JMoOPcE0mfVQOL3jFutkqBiHV8hA=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/pBKWdR6D_I5xV0S5GgfUgRdSUmNaCOsxsubH8Mv17UZ1hAoJ-bYpetY2qnnnErBHrv1MaqDegE-m8RTXrBV-Ozqw5nySxMiD_tOmz1P1xBULnnA6W7w_5fAc8L6iW1F3KjHW6BVO4Q=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/1ren1JE0qMEbFU7JVEAe30LgwpIFSSYvalguUbFaR-rrcJh6o9pYHjglXtD57Y2ehWQg7Lrq98IdVsxOI0vZfH383gn082zz3eFFCr9DW2fHBcohBmANRhWsL6eAFVNMTsFGN_445g=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/yXnjBgndOT7QOUu5TlmzBJEJQzCbMGRbxTdoYuGi8NmVulLdSO6staQKaH3l6vJO1ReQd_q1YJVet5BsBEMFLcGAp3vIg-ba0JC6_P52Ou7ox8gqrWD5oo8Z1HF8qK1xL_htu0z4BQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/r7993r-vreKzJf6DKRkWi5nt64pcwBK5qe606hKYAI3RbL_0LgPED6cwdwsqAdPR-BRu9QEXScnWNSUj1r4Do-KOpvcsoMZvp5yJkrYB0a6xiP7nceEUTeB-I97qhnJnJv1D9WFSVQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/HTRb6QcGpageaA8mgOaOOYQbY85Aw6WxfvvBCwpR2K1vwv-2nexfP6d8ieBsNOmz8pexbMz2BcwZnVzJKUB6jZXfqj8iwbsP1ujddNJDz9XKojOAUIjeAphTq4HieYaE0XvyFQJxeg=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/EeGzrGZog0uAz038vYsn8LJiUrOaknAKCFKaHv5Mxzf4e2h8XbCJEDGcP8zbqksQuUepirAMp6V7rfmBzgJMFliOI5m3ZhwDBH__DXWPT1HpMV027L8svZ5lt8e6sJPaMR3shONo7g=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/3pyKIphA-EvUTsdVyL9ErMKEzUgxczSVXYzqdg2LVT5V5aMm9lBGPSL2qo9WBq7jFERK0ocdEh6rrKlfthLTyH3A_u470FIGebHnLF5Oa8mOFAIPYmBzHFzixUFi1ItdmZAS9gmLIQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/SmDIBy7f6mC3zMtVHPpvczFn9yhVIiyEz6jqpZvhqZyZ9_3KsuGnUILiVpnI4B7-hlXf6J5vBWJ8o0pgC3qXnyuBIGOzah7Bv6UcX-oRLNABCcw__B0dKzvjvunuPn0eqvc2AqqJGQ=w1920-h1080"></object>
+                      <object data="https://lh3.googleusercontent.com/ISvKHtzmPBqrepE1Id-ewY5gYHNDmoPtl0-UMPqRETvzO577OyChVVoQ5gyVyDPzRdGP2WvnBMB0ViYC2InuYL1QHekcF7m0t_W-s3wvr3Pls1xDQiO47ZlpU6sAjmMl7zrE5Yigpg=w1920-h1080"></object>
+                    </div>
 
             </div>
         </div>
-        
-         <div class="quotes" ng-show="pageIndex === 5">
+        <!--
+         <div class="container" ng-show="pageIndex === 5">
             <div class="content">
-                <h1>I have beautiful, beautiful eyes.</h1>
+                <h2>I have beautiful, beautiful eyes.</h2>
             </div>
-        </div>
+        </div> !-->
         
     </div>
 <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
